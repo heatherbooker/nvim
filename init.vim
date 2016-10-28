@@ -8,10 +8,11 @@ if !filereadable(g:nvim_path . '/autoload/plug.vim')
 endif
 
 " Load the individual plugin configurations:
-for path in split(globpath(g:nvim_path . '/config', '*.vim'), "\n")
+for path in split(globpath(g:nvim_path . '/config', '*.vim'), '\n')
     execute 'source' fnameescape(path)
 endfor
 
 " Load the rest of the configuration:
 execute 'source ' . g:nvim_path . '/plugins.vim'
 execute 'source ' . g:nvim_path . '/global.vim'
+execute 'source ' . g:nvim_path . '/keys.vim'
