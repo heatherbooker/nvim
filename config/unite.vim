@@ -1,9 +1,10 @@
 " Don't skip the first line while cycling through candidates:
 let g:unite_enable_auto_select = 0
 
-" Put Unite buffer on the bottom and start it in insert mode:
+" Fixed size buffer at the bottom, start in insert mode, hide source names:
 call unite#custom#profile('default', 'context', {
     \   'start_insert': 1,
+    \   'hide_source_names': 1,
     \   'winheight': 10,
     \   'direction': 'botright',
     \   'prompt_direction': 'top',
@@ -19,9 +20,9 @@ let g:unite_source_grep_recursive_opt = ''
 " Leader key bindings:
 nmap <Leader>b :Unite buffer<CR>
 nmap <Leader>c :Unite command<CR>
-nmap <Leader>d :Unite -hide-source-names directory_rec/async directory/new<CR>
-nmap <Leader>f :Unite file_rec/git:--cached:--others:--exclude-standard<CR>
-nmap <Leader>F :Unite -hide-source-names file_rec/async file/new<CR>
+nmap <Leader>d :Unite directory_rec/async directory/new<CR>
+nmap <Leader>f :Unite file_rec/git:--cached:--others:--exclude-standard file/new<CR>
+nmap <Leader>F :Unite file_rec/async file/new<CR>
 nmap <Leader>g :Unite grep/git:/:--cached\ --untracked<CR>
 nmap <Leader>G :Unite grep:.<CR>
 nmap <Leader>H :Unite help<CR>
