@@ -10,11 +10,9 @@ endif
 " Load the rest of the configuration:
 execute 'source ' . g:nvim_path . '/plugins.vim'
 execute 'source ' . g:nvim_path . '/global.vim'
+execute 'source ' . g:nvim_path . '/keys.vim'
 
-" Load the individual plugin configurations:
+" Load the individual plugins' configuration:
 for path in split(globpath(g:nvim_path . '/config', '*.vim'), '\n')
     execute 'source' fnameescape(path)
 endfor
-
-" Load key bindings:
-execute 'source ' . g:nvim_path . '/keys.vim'

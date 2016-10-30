@@ -13,8 +13,20 @@ let g:unite_source_grep_default_opts =
     \ '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
 let g:unite_source_grep_recursive_opt = ''
 
+" Leader key bindings:
+nmap <Leader>b :Unite buffer<CR>
+nmap <Leader>d :Unite directory directory/new<CR>
+nmap <Leader>f :Unite file_rec/git:--cached:--others:--exclude-standard<CR>
+nmap <Leader>F :Unite file_rec/async file/new<CR>
+nmap <Leader>g :Unite grep/git:/:--cached\ --untracked<CR>
+nmap <Leader>G :Unite grep:.<CR>
+nmap <Leader>l :Unite line<CR>
+nmap <Leader>r :UniteResume<CR>
+
+" Key bindings inside Unite buffers:
 autocmd FileType unite call s:UniteBuffer()
 function! s:UniteBuffer()
+    " Use C-{j,k} to cycle through completion candidates:
     imap <buffer><C-j> <Down>
     imap <buffer><C-k> <Up>
 endfunction
