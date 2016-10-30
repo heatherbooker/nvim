@@ -12,5 +12,6 @@ Plug 'zchee/deoplete-jedi', {'for': 'python'}
 " Unite:
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Shougo/unite.vim'
+Plug 'tsukkee/unite-help'
 
 call plug#end()

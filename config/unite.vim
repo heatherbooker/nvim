@@ -20,6 +20,7 @@ nmap <Leader>f :Unite file_rec/git:--cached:--others:--exclude-standard<CR>
 nmap <Leader>F :Unite file_rec/async file/new<CR>
 nmap <Leader>g :Unite grep/git:/:--cached\ --untracked<CR>
 nmap <Leader>G :Unite grep:.<CR>
+nmap <Leader>h :Unite help<CR>
 nmap <Leader>l :Unite line<CR>
 nmap <Leader>r :UniteResume<CR>
 
