@@ -5,9 +5,10 @@ Plug 'scrooloose/nerdtree'      " File browser.
 Plug 'neomake/neomake'          " Syntax checking.
 
 " Autocompletion:
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'zchee/deoplete-jedi', {'for': 'python'}
 
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
+Plug 'Shougo/unite.vim'
 
 call plug#end()
