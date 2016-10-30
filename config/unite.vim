@@ -18,12 +18,13 @@ let g:unite_source_grep_recursive_opt = ''
 
 " Leader key bindings:
 nmap <Leader>b :Unite buffer<CR>
-nmap <Leader>d :Unite -hide-source-names directory directory/new<CR>
+nmap <Leader>c :Unite command<CR>
+nmap <Leader>d :Unite -hide-source-names directory_rec/async directory/new<CR>
 nmap <Leader>f :Unite file_rec/git:--cached:--others:--exclude-standard<CR>
 nmap <Leader>F :Unite -hide-source-names file_rec/async file/new<CR>
 nmap <Leader>g :Unite grep/git:/:--cached\ --untracked<CR>
 nmap <Leader>G :Unite grep:.<CR>
-nmap <Leader>h :Unite help<CR>
+nmap <Leader>H :Unite help<CR>
 nmap <Leader>l :Unite line<CR>
 nmap <Leader>r :UniteResume<CR>
 
