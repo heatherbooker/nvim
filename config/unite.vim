@@ -1,5 +1,7 @@
+" Don't skip the first line while cycling through candidates:
 let g:unite_enable_auto_select = 0
 
+" Put Unite buffer on the bottom and start it in insert mode:
 call unite#custom#profile('default', 'context', {
     \   'start_insert': 1,
     \   'winheight': 10,
@@ -7,6 +9,7 @@ call unite#custom#profile('default', 'context', {
     \   'prompt_direction': 'top',
     \ })
 
+" Use the Silver Searcher instead of grep:
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts =
     \ '-i --vimgrep --hidden --ignore ' .

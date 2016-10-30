@@ -1,8 +1,13 @@
 " Use Space as leader:
 let mapleader = "\<Space>"
-" Use Ctrl-Space to toggle in and out of insert mode:
-imap <NUL> <ESC>
-nmap <NUL> i
+" Use C-a to get out of insert mode:
+imap <C-a> <ESC>
+
+" Faster navigation between splits:
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 " Use C-d as DEL in insert and command mode:
 imap <C-d> <DEL>
