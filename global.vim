@@ -1,6 +1,8 @@
 " Treat tabs as 4 spaces:
 set shiftwidth=4
 set expandtab 
+" Hide buffers instead of unloading them:
+set hidden
 
 set completeopt+=noinsert  " Auto select the first completion candidate.
 set completeopt-=preview   " Don't show the preview/scratch window.

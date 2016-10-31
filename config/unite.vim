@@ -28,6 +28,10 @@ nmap <Leader>G :Unite grep:.<CR>
 nmap <Leader>H :Unite help<CR>
 nmap <Leader>l :Unite line<CR>
 nmap <Leader>r :UniteResume<CR>
+nmap <Leader>t :Unite tab<CR>
+nmap <Leader>u :Unite<CR>
+nmap <Leader>w :Unite window:no-current<CR>
+nmap <Leader>W :Unite window:all<CR>
 
 " Key bindings inside Unite buffers:
 autocmd FileType unite call s:UniteBuffer()
