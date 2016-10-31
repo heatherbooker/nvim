@@ -5,6 +5,8 @@ Plug 'chriskempson/base16-vim'
 " Enhanced status bar:
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Display only one cursor line:
+Plug 'miyakogi/conoline.vim'
 
 " File browser:
 Plug 'scrooloose/nerdtree', {'on': ['NERDTreeToggle', 'NERDTreeFocus']}
