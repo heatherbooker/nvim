@@ -2,7 +2,7 @@
 let g:airline_powerline_fonts = 1
 
 " Only show Git branch, tabs on the top, whitespace errors:
-let g:airline_extensions = ['branch', 'tabline', 'whitespace']
+let g:airline_extensions = ['branch', 'neomake', 'tabline', 'whitespace']
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1    " Show indexes on buffers.
 let g:airline#extensions#tabline#buffer_min_count = 2   " Don't show the bar if there are less than 2 buffers.
