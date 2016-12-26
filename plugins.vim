@@ -37,5 +37,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin', {'on': ['NERDTreeToggle', 'NERDTreeFocus']}
 
 Plug 'tpope/vim-vinegar'      " Minimal file browser.
 Plug 'chrisbra/SudoEdit.vim'  " Edit files using sudo.
+Plug 'sheerun/vim-polyglot'
+
+Plug 'ervandew/supertab' " Tab completion.
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Or is this tab completion?
+Plug 'scrooloose/nerdcommenter' " Comment lines out using a shortcut.
 
 call plug#end()

@@ -1,6 +1,9 @@
 " More accessible leader:
 let mapleader = ","
 
+nmap <leader>w :w!<cr>
+nmap <silent> <leader>e :FZF<cr>
+
 " Use C-d as DEL in insert and command mode:
 inoremap <C-d> <DEL>
 cnoremap <C-d> <DEL>
@@ -38,3 +41,4 @@ nnoremap <Space>o :only<CR>
 nnoremap <Space>c :close<CR>
 nnoremap <Space>t :tabnew<CR>
 nnoremap <Space>q :tabclose<CR>
+

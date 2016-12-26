@@ -16,3 +16,4 @@ execute 'source ' . g:nvim_path . '/keys.vim'
 for path in split(globpath(g:nvim_path . '/config', '*.vim'), '\n')
     execute 'source' fnameescape(path)
 endfor
+
