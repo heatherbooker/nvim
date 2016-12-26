@@ -1,5 +1,6 @@
 # nvim <a href='https://www.recurse.com' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11325206/336ea5f4-9150-11e5-9e90-d86ad31993d8.png' height='20px'/></a>
 
-My Neovim configuration.
+My Neovim configuration, originally cloned from [Andrea Orru](https://github.com/AndreaOrru/nvim) with help of Nathan Schucher!
 
-Just clone in `~/.config`, start nvim and run `:PU` to install the plugins.
+Uses [vim-plug](https://github.com/junegunn/vim-plug) to manage plugins.
+
