@@ -42,5 +42,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab' " Tab completion.
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Or is this tab completion?
 Plug 'scrooloose/nerdcommenter' " Comment lines out using a shortcut.
+Plug 'tpope/vim-surround' " Change surrounding quotes/parens.
 
 call plug#end()
